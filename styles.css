@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h5 {
+    color: #343a40;
+}
+
+p {
+    color: #6c757d;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero-content h1 {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hero-content p {
+    animation: fadeIn 1.2s ease-in-out forwards; 
+}
+
+.hero-content .btn {
+    animation: scaleIn 1.4s ease-in-out forwards; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for service cards */
+.card {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* State when the card is shown */
+.card.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+/* Scale effect on hover */
+.card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.nav-link {
+    color: #343a40 !important;
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #007bff !important; 
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    font-weight: bold; 
+    color: #007bff; 
+}
+.hero {
+    position: relative; 
+    height: 100vh;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.background-video {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; 
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.hero-content h1 {
+    font-size: 3rem; 
+}
+
+.hero-content p {
+    font-size: 1.5rem; 
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.about-me {
+    animation: fadeIn 1s ease forwards; 
+    background-color: #f9f9f9; 
+}
+
+.about-me {
+    opacity: 0; 
+}
+
+.about-me.appear {
+    opacity: 1; 
+}
+.read-more-btn {
+    margin-top: 1rem; 
+    cursor: pointer; 
+}
+
+/* grid layout  */
+.card {
+    border: none;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .book-now {
+    display: block; 
+    margin: 20px auto; 
+    padding: 20px 20px; 
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px;
+    text-align: center; 
+    cursor: pointer; 
+    text-decoration: none;
+    width: fit-content; 
+}
+
+.card .book-now:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #2db2b9d3;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    color: #000000;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    color: #000000;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+/* Booking Section Styles */
+.booking-section {
+    background-color: #f8f9fa; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.booking-section h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+}
+
+.booking-section form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.booking-section input,
+.booking-section textarea {
+    width: 100%; 
+    padding: 15px;
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+}
+
+.booking-section button {
+    background-color: #007bff; 
+    color: white; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+.booking-section button:hover {
+    background-color: #0056b3; 
+}
